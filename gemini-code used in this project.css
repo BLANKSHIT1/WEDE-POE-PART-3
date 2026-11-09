@@ -1,0 +1,121 @@
+/* -----------------------------------------
+   1. CSS Reset & Base Styles
+   Ensures consistent styling across browsers[cite: 1]
+----------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Custom Variables based on your POE colour scheme[cite: 4] */
+    --primary-black: #0a0a0a;
+    --dark-grey: #1a1a1a;
+    --text-white: #f5f5f5;
+    --accent-purple: #6b21a8; 
+}
+
+body {
+    /* Uses a modern sans-serif typeface as required[cite: 4] */
+    font-family: 'Helvetica Neue', Arial, sans-serif;[cite: 2]
+    background-color: var(--primary-black);[cite: 2]
+    color: var(--text-white);[cite: 2]
+    line-height: 1.6;[cite: 2]
+}
+
+/* -----------------------------------------
+   2. Typography & Relative Units
+   Uses relative units (rem) for spacing and font sizes[cite: 2]
+----------------------------------------- */
+h1 {
+    font-size: 2.5rem;[cite: 2]
+    font-weight: bold;[cite: 2]
+    letter-spacing: 1px;[cite: 2]
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--accent-purple);
+}
+
+/* -----------------------------------------
+   3. Layout Structure (Flexbox)
+   Uses Flexbox to structure content clearly[cite: 2]
+----------------------------------------- */
+.services-section {
+    display: flex;[cite: 2]
+    flex-direction: row;[cite: 2]
+    justify-content: space-around;[cite: 2]
+    align-items: stretch;[cite: 2]
+    padding: 3rem 5%; /* Uses % for responsive widths[cite: 2] */
+    background-color: var(--dark-grey);
+}
+
+.service-card {
+    background-color: var(--primary-black);
+    border: 1px solid #333;[cite: 2]
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);[cite: 2]
+    padding: 2rem;
+    width: 30%;
+}
+
+/* -----------------------------------------
+   4. Visual Styles & Interactive Elements
+   Styles the call-to-action buttons with purple accents[cite: 4]
+----------------------------------------- */
+.book-btn {
+    background-color: var(--accent-purple);
+    color: var(--text-white);
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Pseudo-classes for interactive elements[cite: 2] */
+.book-btn:hover, .book-btn:focus {[cite: 2]
+    background-color: #8b5cf6; /* Lighter purple on hover */
+}
+
+/* -----------------------------------------
+   5. Responsive Design (Media Queries)
+   Applies specific styles to different screen sizes[cite: 2]
+----------------------------------------- */
+
+/* Tablet Breakpoint[cite: 2] */
+@media (max-width: 900px) {
+    .services-section {
+        flex-wrap: wrap; /* Allows cards to wrap on medium screens */
+    }
+    .service-card {
+        width: 45%; 
+        margin-bottom: 2rem;
+    }
+}
+
+/* Mobile Breakpoint[cite: 2] */
+@media (max-width: 600px) {
+    .services-section {
+        flex-direction: column; /* Switches to a single-column layout on smaller screens[cite: 2] */
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 90%; /* Elements adjust width to fit mobile[cite: 2] */
+    }
+
+    h1 {
+        font-size: 2rem; /* Modifies font sizes for mobile breakpoint[cite: 2] */
+    }
+}
+
+/* -----------------------------------------
+   6. Responsive Images
+----------------------------------------- */
+img {
+    max-width: 100%; /* Ensures images scale down responsibly */
+    height: auto;
+}
