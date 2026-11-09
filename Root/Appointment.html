@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade District Barber Studio | Book Appointment</title>
+    <link rel="stylesheet" href="CSS_assets/style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+       <a href="Homepage.html" class="nav-logo">FDBS</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Services&prices.html">Services & Prices</a></li>
+            <li><a href="Enquire.html">Enquire</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="appointment-intro section-title">
+            <h2>Book an Appointment</h2>
+            <p>Secure your slot at Fade District. Fill out the reservation form below and we will confirm your booking via email and text.</p>
+        </section>
+
+        <div class="split-section">
+            <section class="form-container">
+                <h3>Reservation Details</h3>
+                <form action="#">
+                    <label for="service">SELECT SERVICE</label>
+                    <select id="service" name="service" class="form-input" required>
+                        <option value="">Choose from list (e.g. Fade Cut - R120)</option>
+                        
+                        <optgroup label="HAIRCUTS">
+                            <option value="buzz-cut">Buzz Cut - R80</option>
+                            <option value="fade-cut">Fade Cut - R120</option>
+                            <option value="executive-cut">Executive Cut & Wash - R200</option>
+                            <option value="junior-cut">Junior Cut - R90</option>
+                            <option value="senior-cut">Senior Citizens - R100</option>
+                            <option value="lineup-detailing">Line Up & Detailing - R60</option>
+                        </optgroup>
+
+                        <optgroup label="BEARD GROOMING">
+                            <option value="basic-beard-trim">Basic Beard Trim - R80</option>
+                            <option value="beard-fade">Beard Fade & Razor Outlining - R120</option>
+                            <option value="hot-towel-shave">Hot Towel Shave - R200</option>
+                        </optgroup>
+
+                        <optgroup label="MASSAGE & WELLNESS">
+                            <option value="scalp-treatment">Express Scalp Treatment - R80</option>
+                            <option value="head-shoulder-massage">Head & Shoulder Massage - R150</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="date">SELECT DATE</label>
+                    <input type="date" id="date" name="date" class="form-input" required>
+
+                    <label for="time">SELECT TIME</label>
+                    <select id="time" name="time" class="form-input" required>
+                        <option value="">Choose Time Slot</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">01:00 PM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                        <option value="17:00">05:00 PM</option>
+                        <option value="18:00">06:00 PM</option>
+                    </select>
+
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your first and last name" required>
+
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g. +27 82 123 4567" required>
+
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.co.za" required>
+
+                    <button type="submit" class="book-btn">CONFIRM APPOINTMENT</button>
+                </form>
+            </section>
+
+            <aside class="info-sidebar">
+                <h3>Important Info</h3>
+                <h4>CANCELLATION POLICY</h4>
+                <p>Please cancel or reschedule your reservation at least 2 hours in advance. Late changes may result in structural holiday fees for future bookings.</p>
+
+                <h4>STUDIO HOURS</h4>
+                <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <section>
+            <h3>FADE DISTRICT BARBER STUDIO</h3>
+            <p>94 Strand St, Cape Town City Centre,<br>Cape Town, 8001, South Africa</p>
+        </section>
+
+        <section>
+            <h3>CONTACT US</h3>
+            <p>Tel: +27 21 123 4567</p>
+            <p>Email: info@fadedistrict.co.za</p>
+        </section>
+
+        <section class="social-links">
+            <h3>SOCIAL CHANNELS</h3>
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+        </section>
+
+        <p class="copyright-text">&copy; 2026 Fade District Barber Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="JS_assets/script.js"></script>
+
+</body>
+</html>
