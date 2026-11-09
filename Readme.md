@@ -1,4 +1,4 @@
-
+## Fade District Barber Studio
 
 ## Student Information
 - Name: Yuvraj Pothiwala
@@ -34,6 +34,9 @@ Describe/show the structure of your website.
 - About
 - Services
 - Contact
+
+## DEPLOY WEDSITE
+ [Fade District Barber Studio](https://fadedistrictbarberstudio.netlify.app)
 
 ## Changelog
 ### Part 1: Initial Setup
