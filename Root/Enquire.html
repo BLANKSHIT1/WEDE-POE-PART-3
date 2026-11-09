@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade District Barber Studio | Enquire</title>
+    <link rel="stylesheet" href="CSS_assets/style.css"> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="Homepage.html" class="nav-logo">FDBS</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Services&prices.html">Services & Prices</a></li>
+            <li><a href="Enquire.html">Enquire</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="enquiry-page">
+        <section class="section-title">
+            <h2>Make an Enquiry</h2>
+            <p>Please complete the form below and we will get back to you as soon as possible.</p>
+        </section>
+
+        <section class="enquiry-container">
+            <form action="#">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.co.za" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+27 82 123 4567">
+
+                <label for="organisation">Organisation Type:</label>
+                <select id="organisation" name="organisation" class="form-input">
+                    <option value="">Choose an organisation type</option>
+                    <option value="Business">Business</option>
+                    <option value="Non-Profit">Non-Profit Organisation (NPO)</option>
+                    <option value="Community">Community Organisation</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="enquiry">Enquiry Type:</label>
+                <select id="enquiry" name="enquiry" class="form-input">
+                    <option value="General">General Enquiry</option>
+                    <option value="Product">Product Enquiry</option>
+                    <option value="Service">Service Enquiry</option>
+                    <option value="Volunteer">Volunteer</option>
+                    <option value="Sponsor">Sponsor</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" class="form-input" placeholder="Write your enquiry message here..."></textarea>
+
+                <button type="submit" class="book-btn">SUBMIT ENQUIRY</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <section>
+            <h3>FADE DISTRICT BARBER STUDIO</h3>
+            <p>94 Strand St, Cape Town City Centre,<br>Cape Town, 8001, South Africa</p>
+        </section>
+
+        <section>
+            <h3>CONTACT US</h3>
+            <p>Tel: +27 21 123 4567</p>
+            <p>Email: info@fadedistrict.co.za</p>
+        </section>
+
+        <section class="social-links">
+            <h3>SOCIAL CHANNELS</h3>
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+        </section>
+
+        <p class="copyright-text">&copy; 2026 Fade District Barber Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="JS_assets/script.js"></script>
+    
+</body>
+</html>
